@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="addBook" onclick="bookModal()">Book Add</button>
+    <div class="formModal">
+        <form class="formContainer" action="#" method="GET">
+        <label for="name">
+          Book Title:<input type="text" id="name" required>
+        </label>
+        <label for="authorName">
+           Author Name:<input type="text" id="authorName" required>
+        </label>
+        <label for="pageNumber">
+           Pages:<input type="number" id="pageNumber" required>
+        </label>
+            <input type="submit" onclick="addBookToLibrary()">    
+        </form>
+    </div>
+    <div id = "booksContainer">
+
+    </div>
+</body>
+</html>
